@@ -109,7 +109,7 @@
             let challenge = $('#challenge');
             gt.val(getQueryVariable('gt'));
             challenge.val(getQueryVariable('challenge'));
-            if (gt.empty() || challenge.empty()) {
+            if (gt.val() == null || gt.val() === '' || challenge.val() == null || challenge.val() === '') {
                 return;
             }
             generate();
